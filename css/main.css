@@ -1,0 +1,87 @@
+/* * {
+	color: blue;
+}
+
+p {
+	color: red;
+}
+.bonito{		/*Clases
+	background-color: lightblue;
+}
+
+ul {
+	list-style-type: none;
+}
+article ul {	/*Los ul que esten en un articulo
+	list-style-type: square;
+}
+
+#profile-pic img{
+	border-radius: 50%;
+}*/
+
+/*------------ GENERALS -------------*/
+
+ul {
+	list-style-type: none;
+}
+
+/*------------ ASIDE -------------*/
+aside {
+	background-color: #647087;
+}
+aside * {
+	color: white;
+}
+
+aside h2 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+aside section h2:first-child{	/*:nth-child(#)*/
+	border-bottom: 2px solid white;
+}
+
+#profile-pic img{
+	border-radius: 50%;
+}
+
+/*------------ MAIN -------------*/
+
+main section > h2{ /* Hijos directos de los section*/
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.hero {
+		background-color: #EDC0AF;
+box-shadow: 3px 3px 30px 5px #647087 inset;
+}
+
+.hero h2{
+	color: white;
+	border-top: 2px solid white;
+	text-transform: none;
+	letter-spacing: none;
+}
+
+.about-me {
+	background-color: #F7DDC3;
+}
+
+.about-me h2{
+	background-color: white;
+}
+
+article h3,
+article h4{
+	font-weight: bold;
+}
+
+article ul{
+	list-style-type: square;
+}
+
+
+
