@@ -2,34 +2,6 @@
   <html>
     <head>
       <meta charset="utf-8">
-      <style>
-       #main {
-       min-height: 800px;
-       margin: 0px;
-       padding: 0px;
-       display: -webkit-flex;
-       display:         flex;
-       -webkit-flex-flow: row;
-               flex-flow: row;
-      }
-        
-        
-       #main > aside {
-   margin: 4px;
-   padding: 5px;
-   border: 1px solid #8888bb;
-   border-radius: 7pt;
-   background: #ccccff;
-   -webkit-flex: 1 6 20%;
-           flex: 1 6 20%;
-   -webkit-order: 3;
-           order: 3;
-   } 
-        
-      </style>
-      
-      
-      
       
       <title>
         Carlos Ismael Salas Dimas | Resume
@@ -43,6 +15,8 @@
       <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+      
+      <div class"flex-aside">
       <aside>
         <!--Este es el panel de izquierda -->
         <figure id="profile-pic">
@@ -119,6 +93,9 @@
           </ul>
         </section>
       </aside>
+      </div>
+      
+      <div class="flex-main">
       <main>
         <!--Esta es la seccion principal-->
         <section class="hero">
@@ -185,6 +162,7 @@
 
         </section>
       </main>
+      </div>
 
     </body>
 </html>
