@@ -27,8 +27,24 @@ ul {
 }
 
 /*------------ ASIDE -------------*/
+.conteiner {
+	display: flex;	
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flex-aside {
+	flex: 1;
+	padding: 1rem;
+	float: left;
+}
+
 aside {
-	background-color: #647087;
+	background-color: #2D64CE;
 }
 aside * {
 	color: white;
@@ -48,6 +64,10 @@ aside section h2:first-child{	/*:nth-child(#)*/
 }
 
 /*------------ MAIN -------------*/
+.flex-main{
+	float: center;	
+}
+
 
 main section > h2{ /* Hijos directos de los section*/
 	text-transform: uppercase;
@@ -55,8 +75,8 @@ main section > h2{ /* Hijos directos de los section*/
 }
 
 .hero {
-		background-color: #EDC0AF;
-box-shadow: 3px 3px 30px 5px #647087 inset;
+		background-color: #C6AFA7;
+		box-shadow: 3px 3px 30px 5px #2D64CE inset;
 }
 
 .hero h2{
@@ -67,7 +87,7 @@ box-shadow: 3px 3px 30px 5px #647087 inset;
 }
 
 .about-me {
-	background-color: #F7DDC3;
+	background-color: #FFA042;
 }
 
 .about-me h2{
