@@ -19,17 +19,12 @@ article ul {	/*Los ul que esten en un articulo
 #profile-pic img{
 	border-radius: 50%;
 }*/
-
-/*------------ GENERALS -------------*/
-
-ul {
-	list-style-type: none;
-}
-
-/*------------ ASIDE -------------*/
+/* ----------- LAYOUT-----------------*/
 .conteiner {
-	display: flex;	
+	display: flex;
+	width: 1200px;
 }
+
 
 div {
 	display: flex;
@@ -37,21 +32,38 @@ div {
 	justify-content: center;
 }
 
+
 .flex-aside {
 	flex: 1;
 	padding: 1rem;
 	float: left;
 }
 
+/*------------ GENERALS -------------*/
+
+ul {
+	list-style-type: none;
+}
+
+.clear
+{
+	clear: both;
+}
+
+/*------------ ASIDE -------------*/
+
 aside {
 	background-color: #2D64CE;
+	/*width: 30%;
+	margin-right: : 3%;
+	*/
 }
+
 aside * {
 	color: white;
 }
 
 aside h2 {
-	text-transform: uppercase;
 	letter-spacing: 5px;
 }
 
@@ -63,9 +75,14 @@ aside section h2:first-child{	/*:nth-child(#)*/
 	border-radius: 50%;
 }
 
+h1,
+h2{
+	
+}
+
 /*------------ MAIN -------------*/
 .flex-main{
-	float: center;	
+	float: center;
 }
 
 
@@ -77,13 +94,14 @@ main section > h2{ /* Hijos directos de los section*/
 .hero {
 		background-color: #C6AFA7;
 		box-shadow: 3px 3px 30px 5px #2D64CE inset;
+		padding: 15% 0; /*arrriba derecha abajo*/
+		text-align: center;
 }
 
 .hero h2{
 	color: white;
 	border-top: 2px solid white;
-	text-transform: none;
-	letter-spacing: none;
+	letter-spacing: 10px;
 }
 
 .about-me {
@@ -92,6 +110,12 @@ main section > h2{ /* Hijos directos de los section*/
 
 .about-me h2{
 	background-color: white;
+}
+
+.about-me p{
+	line-height: 2.em;
+	background-color: #FFA042;
+	padding: 5px;
 }
 
 article h3,
@@ -103,5 +127,56 @@ article ul{
 	list-style-type: square;
 }
 
+.references {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #FFA042;
+}
+
+.references article
+{
+	width: 50%;
+}
+
+/*------------------ DL----------------*/
+
+dt,
+dd{
+	line-height: 1.5em;
+	border-top: 1px solid white;
+}
 
 
+
+/*
+----CON FLOTANTE------
+dt{
+	width: 30%;
+	float: left;
+	border-top: 1px solid white;
+}
+
+dd{
+	clear: right;
+	width: 60%
+	float: left;
+	margin: 0;
+	border-top: 1px solid white;
+
+}
+*/
+dd:last-of-type,
+dt:last-of-type{
+	border-bottom: 1px solid white;
+}
+
+dl{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+dt,
+dd{
+	flex-basis: 40%;
+	margin: 0;
+}
