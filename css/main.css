@@ -73,12 +73,14 @@ aside section h2:first-child{	/*:nth-child(#)*/
 
 #profile-pic img{
 	border-radius: 50%;
+	width: 150px;
 }
 
 h1,
 h2{
-
+		text-transform: uppercase;
 }
+
 
 /*------------ MAIN -------------*/
 .flex-main{
@@ -191,7 +193,7 @@ dd{
 {
 	padding-right: 15px;
 }
-
+/*----meter------*/
 meter{
 	display: block;
 	width: 80%;
