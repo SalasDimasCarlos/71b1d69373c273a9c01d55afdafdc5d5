@@ -203,12 +203,12 @@ meter {
 
 meter::-webkit-meter-bar {
   background: none;
-  background-color: red;
+  background-color: #DFE4F5;
   box-shadow: 0 5px 5px -5px #333 inset;
 }
 
 meter::-webkit-meter-optimum-value {
   background: none;
-  background-color: blue;
+  background-color: #5281A3;
   box-shadow: 0 5px 5px -5px #333 inset;
 }
