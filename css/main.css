@@ -2,7 +2,7 @@
 * {
   margin: 5px;
   padding: 5px;
-  font-family: "Trebuchet MS", Times, serif;
+  font-family: "Trebuchet MS", serif;
 }
 
 ul {
@@ -14,32 +14,42 @@ ul {
 	clear: both;
 }
 
+#profile-pic img{
+	border-radius: 50%;
+	width: 150px;
+}
+
 /* ----------- LAYOUT-----------------*/
 
 .flex-container {
   display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 body {
-  background-color: #142639;
-  width: 100%;
-}
-
-div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  background-color: #406485;
+  display: flex;
+	justify-content: space-around;
 }
 
 
 /*------------ ASIDE -------------*/
 
 aside {
-	background-color: #253B56;
+	background-color: #182C41;
 	width: 30%;
-	margin-right: : 3%;
+	margin-right: 2%;
+	float: left;
 
+}
+
+aside figure {
+  display: block;
+  margin-left: 25%;
+}
+
+aside figure figcaption {
+	text-align: inherit;
 }
 
 aside * {
@@ -54,9 +64,25 @@ aside section h2:first-child{	/*:nth-child(#)*/
 	border-bottom: 2px solid white;
 }
 
-#profile-pic img{
-	border-radius: 50%;
-	width: 150px;
+aside section .info {
+  margin-top: 10px;
+  height: 60px;
+}
+
+aside section .info img {
+	width: 30px;
+}
+
+aside section .info h3 {
+  top: -57px;
+  left: 25px;
+	position: relative;
+}
+
+aside section .info p {
+	position: relative;
+  top: -74px;
+  left: 35px;
 }
 
 h1,
@@ -66,18 +92,36 @@ h2{
 
 
 /*------------ MAIN -------------*/
+main {
+	background-color: white;
+	width: 63%;
+	margin-right: 2%;
+	float: right;
+}
 
+main * {
+	color: #182C41;
+}
 
 main section > h2{ /* Hijos directos de los section*/
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
 
+main article p{
+	line-height: 2em;
+
+}
+
 .hero {
-		background-color: #C6AFA7;
-		box-shadow: 3px 3px 30px 5px #2D64CE inset;
+		background-color: #406485;
+		box-shadow: 3px 3px 30px 5px white inset;
 		padding: 15% 0; /*arrriba derecha abajo*/
 		text-align: center;
+}
+
+.hero h1 {
+	color: white;
 }
 
 .hero h2{
@@ -86,17 +130,13 @@ main section > h2{ /* Hijos directos de los section*/
 	letter-spacing: 10px;
 }
 
-.about-me {
-	background-color: #FFA042;
+.about-me h2{
+	color: #182C41;
 }
 
-.about-me h2{
-	background-color: white;
-}
 
 .about-me p{
-	line-height: 2.em;
-	background-color: #FFA042;
+	line-height: 2em;
 	padding: 5px;
 }
 
@@ -108,31 +148,26 @@ article h4{
 article ul{
 	list-style-type: square;
 }
+/*----------------References--------------------*/
 
 .references {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #FFA042;
+	background-color: #A8B0BF;
 }
 
 .references article
 {
-	width: 50%;
+	width: 40%;
+	text-align: center;
 }
+
+#reference-icon img {
+  width: 50px;
+}
+
 
 /*------------------ DL----------------*/
-
-dt,
-dd{
-	line-height: 1.5em;
-	border-top: 1px solid white;
-}
-
-
-dd:last-of-type,
-dt:last-of-type{
-	border-bottom: 1px solid white;
-}
 
 dl{
 	display: flex;
@@ -141,17 +176,39 @@ dl{
 
 dt,
 dd{
+	float: left;
+	line-height: 1.5em;
+	border-top: 1px solid white;
 	flex-basis: 40%;
 	margin: 0;
 }
 
 
-#reference-icon img {
-  width: 50px;
+dd:last-of-type,
+dt:last-of-type{
+	border-bottom: 1px solid white;
 }
 
+dt{
+	font-weight: bolder;
+}
+
+
+
 /*----meter------*/
-meter{
+meter {
 	display: block;
 	width: 80%;
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: red;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: none;
+  background-color: blue;
+  box-shadow: 0 5px 5px -5px #333 inset;
 }
