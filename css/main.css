@@ -1,45 +1,9 @@
-/* * {
-	color: blue;
-}
-
-p {
-	color: red;
-}
-.bonito{		/*Clases
-	background-color: lightblue;
-}
-
-ul {
-	list-style-type: none;
-}
-article ul {	/*Los ul que esten en un articulo
-	list-style-type: square;
-}
-
-#profile-pic img{
-	border-radius: 50%;
-}*/
-/* ----------- LAYOUT-----------------*/
-.conteiner {
-	display: flex;
-	width: 1200px;
-}
-
-
-div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-
-.flex-aside {
-	flex: 1;
-	padding: 1rem;
-	float: left;
-}
-
 /*------------ GENERALS -------------*/
+* {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Trebuchet MS", Times, serif;
+}
 
 ul {
 	list-style-type: none;
@@ -50,13 +14,32 @@ ul {
 	clear: both;
 }
 
+/* ----------- LAYOUT-----------------*/
+
+.flex-container {
+  display: flex;
+	justify-content: space-around;
+}
+
+body {
+  background-color: #142639;
+  width: 100%;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
 /*------------ ASIDE -------------*/
 
 aside {
-	background-color: #2D64CE;
-	/*width: 30%;
+	background-color: #253B56;
+	width: 30%;
 	margin-right: : 3%;
-	*/
+
 }
 
 aside * {
@@ -83,9 +66,6 @@ h2{
 
 
 /*------------ MAIN -------------*/
-.flex-main{
-	float: center;
-}
 
 
 main section > h2{ /* Hijos directos de los section*/
@@ -149,24 +129,6 @@ dd{
 }
 
 
-
-/*
-----CON FLOTANTE------
-dt{
-	width: 30%;
-	float: left;
-	border-top: 1px solid white;
-}
-
-dd{
-	clear: right;
-	width: 60%
-	float: left;
-	margin: 0;
-	border-top: 1px solid white;
-
-}
-*/
 dd:last-of-type,
 dt:last-of-type{
 	border-bottom: 1px solid white;
@@ -183,16 +145,11 @@ dd{
 	margin: 0;
 }
 
-.fb::before{
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	content: '\f0802';
+
+#reference-icon img {
+  width: 50px;
 }
 
-.social-item::before
-{
-	padding-right: 15px;
-}
 /*----meter------*/
 meter{
 	display: block;
