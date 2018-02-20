@@ -203,7 +203,7 @@ meter {
 
 meter::-webkit-meter-bar {
   background: none;
-  background-color: red;
+  background-color: #406485;
   box-shadow: 0 5px 5px -5px #333 inset;
 }
 
@@ -212,6 +212,19 @@ meter::-webkit-meter-optimum-value {
   background-color: blue;
   box-shadow: 0 5px 5px -5px #333 inset;
 }
+
+meter::-moz-meter-bar {
+  background: none;
+  background-color: #406485;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-moz-meter-optimum-value {
+  background: none;
+  background-color: blue;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
+
 /*-------- MEDIA-----------*/
 
 @media (max-width: 400px) {
