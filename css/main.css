@@ -40,12 +40,13 @@ aside {
 	width: 30%;
 	margin-right: 2%;
 	float: left;
-
 }
 
 aside figure {
   display: block;
   margin-left: 25%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 aside figure figcaption {
@@ -227,15 +228,31 @@ meter::-moz-meter-optimum-value {
 
 /*-------- MEDIA-----------*/
 
-@media (max-width: 400px) {
-  main {
-    width: 100%;
+@media (max-width: 415px) {
+
+  .flex-container {
     flex-wrap: wrap;
     font-size: 1.2em;
   }
 
+  * {
+    margin: 3px;
+    padding: 5px;
+  }
+
   main,
   aside {
-    flex: 100%;
+    width: 100%;
   }
-}
+
+  aside section .info h3 {
+    top: -47px;
+    left: 28px;
+  	position: relative;
+  }
+
+  aside section .info p {
+  	position: relative;
+    top: -55px;
+    left: 35px;
+  }
