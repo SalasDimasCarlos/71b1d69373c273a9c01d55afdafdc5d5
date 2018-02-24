@@ -256,3 +256,8 @@ meter::-moz-meter-optimum-value {
     top: -55px;
     left: 35px;
   }
+
+  article span {
+    display: none;
+  }
+}
