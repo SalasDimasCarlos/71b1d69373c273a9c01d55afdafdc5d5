@@ -228,7 +228,7 @@ meter::-moz-meter-optimum-value {
 
 /*-------- MEDIA-----------*/
 
-@media (max-width: 415px) {
+@media (max-width: 451px) {
 
   .flex-container {
     flex-wrap: wrap;
@@ -260,4 +260,68 @@ meter::-moz-meter-optimum-value {
   article span {
     display: none;
   }
+}
+
+@media (min-width: 452px) and (max-width: 600px) {
+  .flex-container {
+    flex-wrap: wrap;
+    font-size: 1.2em;
+  }
+
+  * {
+    margin: 3px;
+    padding: 5px;
+    justify-content: center;
+    padding-left: 5%;
+  }
+  main,
+  aside {
+    width: 80%;
+  }
+
+  article span {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1058px) {
+  .flex-container {
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+
+  * {
+    margin: 3px;
+    padding: 5px;
+  }
+
+  main {
+    width: 60%;
+  }
+  aside {
+    width: 30%;
+  }
+
+  aside section .info h3 {
+    top: -47px;
+    left: 28px;
+  	position: relative;
+  }
+
+  aside section .info p {
+  	position: relative;
+    top: -55px;
+    left: 35px;
+  }
+
+  article span {
+    display: none;
+  }
+
+  #profile-pic img{
+  	border-radius: 50%;
+  	width: 100%;
+    margin-left: none;
+  }
+
 }
