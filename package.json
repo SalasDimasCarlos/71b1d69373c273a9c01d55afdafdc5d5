@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/SalasDimasCarlos/71b1d69373c273a9c01d55afdafdc5d5#readme",
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.7.2"
   }
 }
