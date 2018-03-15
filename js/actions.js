@@ -7,4 +7,4 @@ function timer() {
 }
 
 var number = 5;
-var variableInterval = window.setInterval(timer, 500);
+var variableInterval = setInterval(timer, 500);
